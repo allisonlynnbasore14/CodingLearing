@@ -1,0 +1,113 @@
+<html>
+<head>
+	<title>
+		This is the title of the page.
+	</title>
+			<!--This is what is dispalyed when you save the page-->
+</head>
+
+<body>
+<style>
+
+p+p{
+	color: blue;
+}
+/*I could not git the below to work correctly*/
+#paragraph2 ,#paragraph3{
+  padding: 5px;
+  border: 1px solid black;
+  background: rgba(255,0,0,0.25)
+}
+
+/*I could not git the below to work correctly*/
+#paragraph2 > #paragraph3{
+	font-size:50px;
+
+}
+
+#paragraph3 + #paragraph4{
+	font-size: 50px;
+	color: purple;
+	background: orange;
+}
+
+#paragraph3 ~ #paragraph5{
+	font-weight: bold;
+}
+
+p:visited{
+	background:yellow;
+}
+
+a:visited{
+	color: red;
+}
+@media(min-width:801px){
+body{
+	width: 800px;
+	margin: 0 auto;
+	}
+}
+
+
+[sibling]{
+	color: skyblue;
+}
+
+[sibling = "sister"]{
+	font-size: 40px;
+}
+
+[sibling$='er']{
+	background-color:green; 
+
+}
+</style>
+<ul>
+	<li data-quantity="family" sibling="sister">Reba </li>
+	<li data-quantity="family" sibling="sister">Kate </li>
+	<li data-quantity="family" sibling="brother">Matt </li>
+	<li data-quantity="family" parent="mother">Angela</li>
+	<li data-quantity="family" parent="father">Richard </li>
+</ul>
+
+<a href="https://docs.google.com/presentation/d/1pohgXTRVl9BeVEXyycCa0Pn63kDSi_8ZnyqIv0r7ABo/edit#slide=id.g1d8e5b9a0c_0_2">wikipedia.org</a>
+
+</p>
+ 	"This is a paragraph element"
+<p>
+<p>
+	"This element is blue only becasue it follows a diffrent paragraph element"
+</p>
+<p id = "paragraph"> </p>
+<p id = "paragraph2"> 
+	Stuff!!!
+	<p id = "paragraph3">
+	This paragraph's background is green because it follows the paragraph2 id element.
+	</p>
+	<p id = "paragraph4">
+	This is a diffrent paragraph that is a sibiling
+	</p>
+	<p id = "paragraph5">
+	This is a final sibling
+	</p>
+</p>
+	
+
+<script>
+
+var Javascript_Variable1 = "This is a variable string"
+var Javascript_Variable2 = 73383838
+var Javascript_Variable3 = 3.0
+
+document.getElementById('paragraph').innerHTML = Javascript_Variable2;
+
+</script>
+
+
+
+<meta> This Stores information about me as the author. Anything I do not want to show.</meta>
+</body>
+</html>
+
+

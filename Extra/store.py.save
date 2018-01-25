@@ -1,0 +1,10 @@
+def store(item):
+#""Returns the cost the iteam in this store"""
+    total = 0
+    for i in item:
+	cost = ord(i) -96
+	total = total + cost
+    return total
+
+
+store('blue')
